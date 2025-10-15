@@ -27,6 +27,7 @@ run:
 		echo "Processing $$file..."; \
 		./c2o "$$file"; \
 	done
+	python3 post.py
 
 clean:
 	@echo "Cleaning up shared library $(LIBREBOUND) ..."
